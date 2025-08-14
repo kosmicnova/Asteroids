@@ -1,4 +1,4 @@
-import pygame
+import pygame 
 from constants import *
 from player import *
 from circleshape import *
@@ -24,6 +24,7 @@ def main():
                 return
 
         screen.fill("black")
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
         clock.tick(60)
