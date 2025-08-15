@@ -48,7 +48,7 @@ def main():
                 sys.exit(["You hit an asteroid, dummy"])
             for shot in shots:
                 if asteroid.colliding(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
                     break
         for obj in drawable:
